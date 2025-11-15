@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-darkBackground font-sans text-darkText flex flex-col min-h-screen">
+    <nav class="bg-darkAccent p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">My Calculator</a>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-white hover:text-gray-200">Home</a></li>
+                <li><a href="#" class="text-white hover:text-gray-200">About</a></li>
+                <li><a href="#" class="text-white hover:text-gray-200">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="flex-grow flex items-center justify-center py-8">
+        <div class="calculator bg-darkCard p-8 rounded-2xl shadow-2xl border-4 border-darkAccent">
+        <div class="display mb-4">
+            <input type="text" class="w-full p-4 text-right text-4xl font-semibold border-2 border-darkAccent rounded-lg mb-4 bg-darkBackground text-darkText" value="0" readonly>
+        </div>
+        <div class="grid grid-cols-4 gap-2">
+            <button class="col-span-2 p-4 text-2xl bg-darkHighlight hover:bg-red-700 text-white rounded-lg transition duration-200 ease-in-out transform hover:scale-105">AC</button>
+            <button class="p-4 text-2xl bg-darkAccent hover:bg-darkHighlight text-darkText rounded-lg transition duration-200 ease-in-out transform hover:scale-105">+/-</button>
+            <button class="p-4 text-2xl bg-darkHighlight hover:bg-darkHighlight text-white rounded-lg transition duration-200 ease-in-out transform hover:scale-105">/</button>
+
+            <button class="p-4 text-2xl bg-darkAccent hover:bg-darkHighlight text-darkText rounded-lg transition duration-200 ease-in-out transform hover:scale-105">7</button>
+            <button class="p-4 text-2xl bg-darkAccent hover:bg-darkHighlight text-darkText rounded-lg transition duration-200 ease-in-out transform hover:scale-105">8</button>
+            <button class="p-4 text-2xl bg-darkAccent hover:bg-darkHighlight text-darkText rounded-lg transition duration-200 ease-in-out transform hover:scale-105">9</button>
+            <button class="p-4 text-2xl bg-darkHighlight hover:bg-darkHighlight text-white rounded-lg transition duration-200 ease-in-out transform hover:scale-105">x</button>
+
+            <button class="p-4 text-2xl bg-darkAccent hover:bg-darkHighlight text-darkText rounded-lg transition duration-200 ease-in-out transform hover:scale-105">4</button>
+            <button class="p-4 text-2xl bg-darkAccent hover:bg-darkHighlight text-darkText rounded-lg transition duration-200 ease-in-out transform hover:scale-105">5</button>
+            <button class="p-4 text-2xl bg-darkAccent hover:bg-darkHighlight text-darkText rounded-lg transition duration-200 ease-in-out transform hover:scale-105">6</button>
+            <button class="p-4 text-2xl bg-darkHighlight hover:bg-darkHighlight text-white rounded-lg transition duration-200 ease-in-out transform hover:scale-105">-</button>
+
+            <button class="p-4 text-2xl bg-darkAccent hover:bg-darkHighlight text-darkText rounded-lg transition duration-200 ease-in-out transform hover:scale-105">1</button>
+            <button class="p-4 text-2xl bg-darkAccent hover:bg-darkHighlight text-darkText rounded-lg transition duration-200 ease-in-out transform hover:scale-105">2</button>
+            <button class="p-4 text-2xl bg-darkAccent hover:bg-darkHighlight text-darkText rounded-lg transition duration-200 ease-in-out transform hover:scale-105">3</button>
+            <button class="p-4 text-2xl bg-darkHighlight hover:bg-darkHighlight text-white rounded-lg transition duration-200 ease-in-out transform hover:scale-105">+</button>
+
+            <button class="col-span-2 p-4 text-2xl bg-darkAccent hover:bg-darkHighlight text-darkText rounded-lg transition duration-200 ease-in-out transform hover:scale-105">0</button>
+            <button class="p-4 text-2xl bg-darkAccent hover:bg-darkHighlight text-darkText rounded-lg transition duration-200 ease-in-out transform hover:scale-105">.</button>
+            <button class="p-4 text-2xl bg-darkHighlight hover:bg-darkHighlight text-white rounded-lg transition duration-200 ease-in-out transform hover:scale-105">=</button>
+        </div>
+    </main>
+    <footer class="bg-darkAccent p-4 text-darkText text-center shadow-inner mt-auto">
+        <p>&copy; 2025 My Calculator. All rights reserved.</p>
+    </footer>
+    <script src="./src/script.js"></script>
+</body>
+</html>
